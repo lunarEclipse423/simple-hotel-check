@@ -1,0 +1,40 @@
+@import "../../sass/abstract/mixins";
+@import "../../sass/abstract/constants";
+
+.hotel-card {
+  padding: 16px 16px 16px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotel-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $color-hotel-circle;
+}
+
+.hotel-info-text {
+  margin-left: 24px;
+  max-width: 345px;
+}
+
+.hotel-info {
+  display: flex;
+  flex: 75%;
+}
+
+.hotel-additional {
+  flex: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.hotel-card__light-divider {
+  @include divider(584px);
+}

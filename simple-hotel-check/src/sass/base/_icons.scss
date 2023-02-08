@@ -1,0 +1,71 @@
+.icon {
+  display: inline-block;
+}
+
+.logout-icon {
+  width: 22px;
+  height: 22px;
+  background-image: url("./../svg/logout-icon.svg");
+  cursor: pointer;
+}
+
+.arrow-icon {
+  width: 11px;
+  height: 20px;
+  background-image: url("./../svg/arrow.svg");
+}
+
+.star-icon {
+  width: 17px;
+  height: 17px;
+  &_yellow {
+    background-image: url("./../svg/star-yellow.svg");
+  }
+  &_gray {
+    background-image: url("./../svg/star-gray.svg");
+  }
+}
+
+.favorite-icon {
+  width: 23px;
+  height: 20px;
+  background-image: url("./../svg/favorite.svg");
+  cursor: pointer;
+  &:hover {
+    background-image: url("./../svg/favorite-hover.svg");
+  }
+  &.active {
+    width: 21px;
+    height: 18px;
+    background-image: url("./../svg/favorite-active.svg");
+  }
+}
+
+.hotel-icon {
+  width: 35px;
+  height: 35px;
+  background-image: url("./../svg/house.svg");
+}
+
+.select-icon {
+  width: 9px;
+  height: 7px;
+  display: inline-block;
+  background-image: url("./../svg/select.svg");
+  cursor: pointer;
+  &:hover {
+    width: 9px;
+    height: 6px;
+    background-image: url("./../svg/select-hover.svg");
+    transform: rotateX(180deg);
+  }
+  &_up {
+    transform: rotateX(180deg);
+    &:hover {
+      width: 9px;
+      height: 6px;
+      background-image: url("./../svg/select-hover.svg");
+      transform: rotateX(0);
+    }
+  }
+}

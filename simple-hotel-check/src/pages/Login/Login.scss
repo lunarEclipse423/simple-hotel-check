@@ -1,0 +1,78 @@
+@import "../../sass/abstract/constants";
+@import "../../sass/abstract/mixins";
+@import "../../sass/abstract/placeholders";
+
+.login-wrapper {
+  height: 100vh;
+  background-image: url("../../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $color-text;
+}
+
+.layout {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $color-layout-bg;
+  backdrop-filter: blur(10px);
+}
+
+.login-window {
+  padding: 32px;
+  width: 409px;
+  background: $color-light;
+  box-shadow: 0px 4px 33px $color-box-shadow;
+  border-radius: 16px;
+}
+
+.login__title {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.input-label {
+  @include font(1.6rem, 1.9rem, 300);
+  &_error {
+    color: $color-error;
+  }
+}
+
+.input__email {
+  margin: 7px 0;
+}
+
+.input-wrapper {
+  margin-bottom: 24px;
+}
+
+.input__password {
+  margin: 7px 0;
+}
+
+.input {
+  padding: 15px;
+  width: 345px;
+  height: 50px;
+  @extend %font-primary;
+  @include font(1.6rem, 2rem, 300);
+  color: $color-text;
+  background: $color-light;
+  border: 1px solid $color-input-border;
+  border-radius: 4px;
+  &_error {
+    color: $color-error;
+  }
+  transition: 0.5s;
+  &:focus {
+    outline: none;
+    border-color: $color-input-focus;
+  }
+}
+
+.error {
+  @include font(1.2rem, 1.4rem, 300);
+  color: $color-error;
+}

@@ -1,0 +1,120 @@
+@import "../../sass/abstract/mixins";
+@import "../../sass/abstract/placeholders";
+@import "../../sass/abstract/constants";
+
+.search-page {
+  padding-bottom: 26px;
+  height: 100%;
+  background: $color-search-bg;
+}
+
+.main-block {
+  max-width: 1048px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-params {
+  padding: 32px;
+  width: 360px;
+  height: 410px;
+  gap: 32px;
+  background: $color-light;
+  box-shadow: 0px 4px 33px $color-box-shadow;
+  border-radius: 16px;
+  & .input-wrapper {
+    margin: 0;
+  }
+}
+
+input {
+  transition: 1s;
+  &:focus {
+    border-color: 1px solid red;
+  }
+}
+
+.input {
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+input[type="date"] {
+  &::-webkit-calendar-picker-indicator {
+    display: block;
+    background: url("../../svg/calendar.svg") no-repeat;
+    width: 18px;
+    height: 18px;
+    border-width: thin;
+  }
+}
+
+.input__search {
+  margin-top: 7px;
+  margin-bottom: 16px;
+  width: 296px;
+}
+
+.label__search {
+  @include font(1.6rem, 1.9rem);
+}
+
+.button__search {
+  margin-top: 16px;
+}
+
+.hotels {
+  padding: 48px 32px;
+  width: 664px;
+  height: 902px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  background: $color-light;
+  box-shadow: 0px 4px 33px $color-box-shadow;
+  border-radius: 16px;
+}
+
+.current-check-in-date {
+  @include font(2.4rem, 2.8rem, 400);
+  text-align: right;
+  color: $color-text-secondary;
+}
+
+.hotels-header__icon {
+  margin: 0 20px;
+}
+
+.hotels-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotels-list {
+  width: 600px;
+  height: 530px;
+  overflow: auto;
+  @extend %custom-scroll;
+}
+
+.favorite-hotels-counter {
+  @include font(1.7rem, 2.2rem, 300);
+  letter-spacing: -0.408px;
+  color: $color-text;
+}
+
+.favorite-hotels-number {
+  @include font(1.7rem, 2.2rem);
+  color: $color-text-secondary;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

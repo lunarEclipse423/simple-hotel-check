@@ -1,0 +1,27 @@
+$color-light: #ffffff;
+$color-text: #424242;
+$color-text-secondary: #41522e;
+$color-box-shadow: rgba(0, 0, 0, 0.04);
+$color-layout-bg: rgba(255, 255, 255, 0.6);
+$color-input-border: #c9cacc;
+$color-login-btn: linear-gradient(104.34deg, #41522e -15.34%, #be8022 145.95%);
+$color-light-divider: rgba(135, 135, 135, 0.2);
+
+$color-scrollbar-track: #e7e7e7;
+$color-scrollbar-thumb: #41522e;
+
+$color-button-hover: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2)
+  ),
+  linear-gradient(104.34deg, #41522e -15.34%, #be8022 145.95%);
+$color-button-active: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  linear-gradient(104.34deg, #41522e -15.34%, #be8022 145.95%);
+
+$color-search-bg: #e5e5e5;
+$color-hotel-price: #878787;
+$color-hotel-circle: rgba(65, 82, 46, 0.05);
+$color-booking-date: #878787;
+$color-error: #eb1717;
+$color-input-focus: #41522e;
