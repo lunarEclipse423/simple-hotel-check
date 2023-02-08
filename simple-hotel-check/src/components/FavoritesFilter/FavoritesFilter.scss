@@ -1,0 +1,24 @@
+@import "../../sass/abstract/mixins";
+@import "../../sass/abstract/constants";
+
+.filter {
+  padding: 4px 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  background: $color-light;
+  border: 1px solid $color-text-secondary;
+  border-radius: 4px;
+}
+
+.option-title {
+  @include font(1.4rem, 2rem, 400);
+  letter-spacing: -0.408px;
+  color: $color-text-secondary;
+}
+
+.selectors {
+  display: flex;
+  flex-direction: column;
+}

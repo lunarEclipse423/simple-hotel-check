@@ -1,0 +1,20 @@
+@import "../../sass/abstract/mixins";
+@import "../../sass/abstract/constants";
+
+.header {
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout {
+  width: 84px;
+  @include font(1.6rem, 2rem, 400);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: right;
+  letter-spacing: -0.408px;
+  color: $color-text-secondary;
+}

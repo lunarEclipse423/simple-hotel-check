@@ -1,0 +1,18 @@
+@import "./constants";
+
+@mixin font($size, $height: $size, $weight: 500, $style: normal) {
+  font-style: $style;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin divider($width) {
+  margin: 0;
+  width: $width;
+  border-top: 1px solid $color-light-divider;
+  border-radius: 8px;
+  &:last-child {
+    display: none;
+  }
+}

@@ -1,0 +1,17 @@
+@import "../../sass/abstract/mixins";
+@import "../../sass/abstract/constants";
+
+.hotel-date {
+  margin-bottom: 5px;
+}
+
+.booking-date {
+  @include font(1.4rem, 2.2rem, 400);
+  letter-spacing: -0.408px;
+  color: $color-booking-date;
+}
+
+.hotel-rating {
+  display: flex;
+  gap: 3px;
+}
