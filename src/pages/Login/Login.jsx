@@ -18,6 +18,7 @@ const Login = () => {
 
   const loginUser = async (e) => {
     e.preventDefault();
+    setErrors(startValues);
     let validationErrors = validateLoginInput({ email, password });
     for (let key in validationErrors) {
       if (validationErrors[key] !== "") {
@@ -30,13 +31,13 @@ const Login = () => {
 
   return (
     <div className="login-wrapper">
-      <div className="layout">
+      <div className="login-layout">
         <div className="login-window">
           <h3 className="login__title">Simple Hotel Check</h3>
           <form onSubmit={loginUser}>
-            <div className="input-wrapper">
+            <div className="input-wrapper login__input-wrapper">
               <label
-                className={`input-label${
+                className={`input-label login__input-label${
                   errors.email === "" ? "" : " input-label_error"
                 }`}
               >
@@ -52,9 +53,9 @@ const Login = () => {
               />
               <span className="error">{errors.email === "" ? "" : errors.email}</span>
             </div>
-            <div className="input-wrapper">
+            <div className="input-wrapper login__input-wrapper">
               <label
-                className={`input-label${
+                className={`input-label login__input-label${
                   errors.password === "" ? "" : " input-label_error"
                 }`}
               >

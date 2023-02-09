@@ -12,6 +12,7 @@ h2 {
 h3 {
   margin: 0;
   @include font(2.4rem, 2.8rem);
+  color: $color-text;
 }
 
 h4 {
@@ -19,4 +20,19 @@ h4 {
   @include font(1.7rem, 2.2rem, 300);
   letter-spacing: -0.408px;
   color: $color-text;
+}
+
+input[type="date"] {
+  &::-webkit-calendar-picker-indicator {
+    display: block;
+    background: url("./../svg/calendar.svg") no-repeat;
+    width: 18px;
+    height: 18px;
+    border-width: thin;
+  }
+}
+
+.error {
+  @include font(1.2rem, 1.4rem, 300);
+  color: $color-error;
 }

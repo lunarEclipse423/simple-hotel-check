@@ -10,7 +10,7 @@
   color: $color-text;
 }
 
-.layout {
+.login-layout {
   width: 100%;
   height: inherit;
   display: flex;
@@ -33,46 +33,18 @@
   text-align: center;
 }
 
-.input-label {
+.login__input-label {
   @include font(1.6rem, 1.9rem, 300);
-  &_error {
-    color: $color-error;
-  }
 }
 
 .input__email {
   margin: 7px 0;
 }
 
-.input-wrapper {
-  margin-bottom: 24px;
-}
-
 .input__password {
   margin: 7px 0;
 }
 
-.input {
-  padding: 15px;
-  width: 345px;
-  height: 50px;
-  @extend %font-primary;
-  @include font(1.6rem, 2rem, 300);
-  color: $color-text;
-  background: $color-light;
-  border: 1px solid $color-input-border;
-  border-radius: 4px;
-  &_error {
-    color: $color-error;
-  }
-  transition: 0.5s;
-  &:focus {
-    outline: none;
-    border-color: $color-input-focus;
-  }
-}
-
-.error {
-  @include font(1.2rem, 1.4rem, 300);
-  color: $color-error;
+.login__input-wrapper {
+  margin-bottom: 24px;
 }

@@ -1,17 +1,18 @@
 import React from "react";
 import formatDate from "../../utils/formatDate";
-import formatDays from "../../utils/formatDays";
+import formatWords from "../../utils/formatWords";
 import "./HotelInfo.scss";
 
 const HotelInfo = ({ hotelName, checkInDate, days, stars }) => {
   const maxStarsValue = 5;
+  const dayWords = ["день", "дня", "дней"];
 
   return (
     <>
       <h4 className="hotel-title">{hotelName}</h4>
       <div className="hotel-date">
         <span className="booking-date">
-          {formatDate(checkInDate)} – {days} {formatDays(days)}
+          {formatDate(checkInDate)} – {days} {formatWords(days, dayWords)}
         </span>
       </div>
       <div className="hotel-rating">
