@@ -9,68 +9,49 @@
 }
 
 .main-block {
-  max-width: 1048px;
   margin: 0 auto;
+  max-width: 1048px;
   display: flex;
   justify-content: space-between;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .search-params {
   padding: 32px;
   width: 360px;
-  height: 410px;
   gap: 32px;
   background: $color-light;
   box-shadow: 0px 4px 33px $color-box-shadow;
   border-radius: 16px;
-  & .input-wrapper {
-    margin: 0;
-  }
 }
 
-input {
-  transition: 1s;
-  &:focus {
-    border-color: 1px solid red;
-  }
+.search__input-wrapper {
+  margin-bottom: 8px;
 }
 
-.input {
-  &::-webkit-outer-spin-button,
-  &::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-}
-
-input[type="date"] {
-  &::-webkit-calendar-picker-indicator {
-    display: block;
-    background: url("../../svg/calendar.svg") no-repeat;
-    width: 18px;
-    height: 18px;
-    border-width: thin;
-  }
-}
-
-.input__search {
+.search__input {
   margin-top: 7px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   width: 296px;
 }
 
-.label__search {
+.search__input-label {
   @include font(1.6rem, 1.9rem);
+  color: $color-text;
 }
 
-.button__search {
+.search__button {
   margin-top: 16px;
 }
 
 .hotels {
   padding: 48px 32px;
   width: 664px;
-  height: 902px;
   display: flex;
   flex-direction: column;
   gap: 28px;
@@ -85,19 +66,19 @@ input[type="date"] {
   color: $color-text-secondary;
 }
 
-.hotels-header__icon {
-  margin: 0 20px;
-}
-
 .hotels-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.hotels-header__icon {
+  margin: 0 20px;
+}
+
 .hotels-list {
   width: 600px;
-  height: 530px;
+  max-height: 504px;
   overflow: auto;
   @extend %custom-scroll;
 }
@@ -111,10 +92,4 @@ input[type="date"] {
 .favorite-hotels-number {
   @include font(1.7rem, 2.2rem);
   color: $color-text-secondary;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
 }
